@@ -1,9 +1,25 @@
-import Image from 'next/image';
+"use client";
+
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faTwitter,
+  faLinkedin,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
-  return (
-    <main className="container mx-auto px-4 py-8"> 
+  const [isClient, setIsClient] = useState(false);
 
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  return (
+    <main className="container mx-auto px-4 py-8">
       {/* Hero Section */}
       <section className="text-center py-12">
         <h1 className="text-5xl font-bold mb-4">Jack Kaeorahan</h1>
@@ -14,10 +30,17 @@ export default function Home() {
       <section className="py-8">
         <h2 className="text-2xl font-bold mb-4">About Me</h2>
         <p>
-        Hi, I'm Jack Kaeorahan, a passionate Software Development student at Gilde ICT College in Roermond.  Our curriculum is unique – we learn by doing, mirroring real-world client interactions. This hands-on approach gives me a significant advantage, preparing me for the challenges and dynamics of the professional tech world.
-        I've already gained experience with a variety of programming languages and I'm constantly seeking new knowledge to expand my skillset. I'm excited about the future of software development and eager to contribute to innovative projects.
+          Hi, I'm Jack Kaeorahan, a passionate Software Development student at
+          Gilde ICT College in Roermond. Our curriculum is unique – we learn by
+          doing, mirroring real-world client interactions. This hands-on
+          approach gives me a significant advantage, preparing me for the
+          challenges and dynamics of the professional tech world. I've already
+          gained experience with a variety of programming languages and I'm
+          constantly seeking new knowledge to expand my skillset. I'm excited
+          about the future of software development and eager to contribute to
+          innovative projects.
         </p>
-      </section>  
+      </section>
 
       {/* Projects Section */}
       <section className="py-8">
@@ -25,13 +48,115 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Project Card 1 */}
           <div className="bg-white shadow-md rounded-lg p-6">
-            <Image src="/project-placeholder.jpg" alt="Project 1" width={400} height={300} />
-            <h3 className="text-xl font-bold mt-4">Project Title 1</h3>
-            <p>Brief description of the project and technologies used.</p>
-            <a href="https://example.com/" className="text-blue-500 hover:underline">View Project</a>
+            <h3 className="text-xl font-bold mt-4">
+              Website for advertising an Arduino project
+            </h3>
+            <p>
+              This website was created to showcase our Arduino project, an IoT
+              People Counter with Emergency Features. It's built using HTML, CSS
+              and PHP for a simple and effective presentation. Learn more about
+              the project via the Tinkercad link below.
+            </p>
+            <a
+              href="https://www.tinkercad.com/things/79qmO2bw327-iot-people-counter-emegency-include"
+              className="text-blue-500 hover:underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn More
+            </a>
+            <a
+              href="https://github.com/KurodaKJ/iot-product-site"
+              className="text-blue-500 hover:underline mt-2 block"
+            >
+              View Project
+            </a>
           </div>
 
-          {/* Add more project cards as needed */}
+          {/* Project Card 2 */}
+          <div className="bg-white shadow-md rounded-lg p-6">
+            <h3 className="text-xl font-bold mt-4">Time Registration System</h3>
+            <p>
+              This Time Registration System is a web application built with
+              HTML, CSS and PHP to efficiently track and manage work hours.
+            </p>
+            <a
+              href="https://github.com/KurodaKJ/time-registration-system"
+              className="text-blue-500 hover:underline mt-2 block"
+            >
+              View Project
+            </a>
+          </div>
+
+          {/* Project Card 3 */}
+          <div className="bg-white shadow-md rounded-lg p-6">
+            <h3 className="text-xl font-bold mt-4">Menu Ordering System</h3>
+            <p>
+              This Android-based menu ordering system, built with Java, Kotlin,
+              and PostgreSQL, streamlines the ordering process on tablet
+              devices. Customers can easily browse the menu, place orders, and
+              conveniently calculate their total bill using the integrated
+              payout functionality.
+            </p>
+            <a
+              href="https://github.com/Chriotjuh1/Tappasrestaurant"
+              className="text-blue-500 hover:underline mt-2 block"
+            >
+              View Project
+            </a>
+          </div>
+
+          {/* Project Card 4 */}
+          <div className="bg-white shadow-md rounded-lg p-6">
+            <h3 className="text-xl font-bold mt-4">Simple Search Engine</h3>
+            <p>
+              This project is a simple search engine built with Laravel. It
+              allows users to quickly and easily search for information within a
+              defined dataset, providing relevant results in a user-friendly
+              format.
+            </p>
+            <a
+              href="https://github.com/KurodaKJ/gilde-search"
+              className="text-blue-500 hover:underline mt-2 block"
+            >
+              View Project
+            </a>
+          </div>
+
+          {/* Project Card 5 */}
+          <div className="bg-white shadow-md rounded-lg p-6">
+            <h3 className="text-xl font-bold mt-4">
+              Inventory Management System
+            </h3>
+            <p>
+              This Inventory Management System build with Python-Flask, aims to
+              combat food waste by enabling efficient inventory tracking and
+              providing recipe suggestions based on available ingredients.
+              Minimize waste and maximize your culinary creativity!
+            </p>
+            <a
+              href="https://github.com/KurodaKJ/kookkelder-api"
+              className="text-blue-500 hover:underline mt-2 block"
+            >
+              View Project
+            </a>
+          </div>
+
+          {/* Project Card 6 */}
+          <div className="bg-white shadow-md rounded-lg p-6">
+            <h3 className="text-xl font-bold mt-4">Simple Web Crawler</h3>
+            <p>
+              This project is a simple web crawler built with C++. It
+              efficiently navigates websites and extracting and their content
+              for further analysis or processing.
+            </p>
+            <a
+              href="https://github.com/KurodaKJ/simple-web-crawler"
+              className="text-blue-500 hover:underline mt-2 block"
+            >
+              View Project
+            </a>
+          </div>
         </div>
       </section>
 
@@ -42,21 +167,38 @@ export default function Home() {
           {/* Experience Card 1 */}
           <div className="bg-white shadow-md rounded-lg p-6">
             <h3 className="text-xl font-bold mb-2">Het Beginstation</h3>
-            <p className="text-gray-600">Intern</p>
-            <p className="text-gray-600">February - July</p>
-            <p className="text-gray-600">Description of the role and responsibilities.</p>
+            <p className="text-600">Intern</p>
+            <p className="text-600">February - July</p>
+            <p className="text-gray-600">
+              Developed functionalities for a new bike management system to
+              streamline the management and sales of bicycles. Utilized a
+              combination of frontend and backend development skills using .NET
+              Frameworks.
+            </p>
           </div>
-
-          {/* Add more experience cards as needed */}
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="py-8">
-        <h2 className="text-2xl font-bold mb-4">Contact</h2>
-        <p>Provide email and social media linkshere.</p>
+      <section className="py-8 text-center">
+        <h2 className="text-2xl font-bold mb-4">Contact Me!</h2>
+        {isClient && (
+          <div className="flex justify-center items-center space-x-4">
+            <a
+              href="mailto:hiso8155@gmail.com"
+              className="text-blue-300 hover:text-blue-500"
+            >
+              <FontAwesomeIcon icon={faEnvelope} size="2x" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/kurodakj/"
+              className="text-blue-300 hover:text-blue-500"
+            >
+              <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
+          </div>
+        )}
       </section>
-
     </main>
   );
 }
