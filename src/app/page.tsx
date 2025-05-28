@@ -168,8 +168,8 @@ export default function Home() {
           <div className="bg-white shadow-md rounded-lg p-6">
             <h3 className="text-xl font-bold mb-2">Het Beginstation</h3>
             <p className="text-600">Intern</p>
-            <p className="text-600">February - July</p>
-            <p className="text-gray-600">
+            <p className="text-600 dark:text-gray-400">February - July</p>
+            <p className="text-gray-600 dark:text-gray-400 mt-2">
               Developed functionalities for a new bike management system to
               streamline the management and sales of bicycles. Utilized a
               combination of frontend and backend development skills using .NET
