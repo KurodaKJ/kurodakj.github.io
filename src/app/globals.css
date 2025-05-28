@@ -10,11 +10,17 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --foreground-rgb: 238, 130, 238;
+    --background-start-rgb: 0, 0, 80;
     --background-end-rgb: 0, 0, 0;
   }
+  .card {
+    background-color: #333; /* Dark grey background */
+    color: #ddd; /* Lighter text color */
+  }
 }
+
+/* Apply styles to the card component */
 
 body {
   color: rgb(var(--foreground-rgb));

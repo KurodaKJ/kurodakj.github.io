@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
+  faGithub,
   faLinkedin,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
@@ -45,7 +46,7 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-4">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Project Card 1 */}
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="shadow-md rounded-lg p-6 card">
             <h3 className="text-xl font-bold mt-4">
               Website for advertising an Arduino project
             </h3>
@@ -72,7 +73,7 @@ export default function Home() {
           </div>
 
           {/* Project Card 2 */}
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="shadow-md rounded-lg p-6 card">
             <h3 className="text-xl font-bold mt-4">Time Registration System</h3>
             <p>
               This Time Registration System is a web application built with
@@ -87,7 +88,7 @@ export default function Home() {
           </div>
 
           {/* Project Card 3 */}
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="shadow-md rounded-lg p-6 card">
             <h3 className="text-xl font-bold mt-4">Menu Ordering System</h3>
             <p>
               This Android-based menu ordering system, built with Java, Kotlin,
@@ -105,7 +106,7 @@ export default function Home() {
           </div>
 
           {/* Project Card 4 */}
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="shadow-md rounded-lg p-6 card">
             <h3 className="text-xl font-bold mt-4">Simple Search Engine</h3>
             <p>
               This project is a simple search engine built with Laravel. It
@@ -122,7 +123,7 @@ export default function Home() {
           </div>
 
           {/* Project Card 5 */}
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="shadow-md rounded-lg p-6 card">
             <h3 className="text-xl font-bold mt-4">
               Inventory Management System
             </h3>
@@ -141,7 +142,7 @@ export default function Home() {
           </div>
 
           {/* Project Card 6 */}
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="shadow-md rounded-lg p-6 card">
             <h3 className="text-xl font-bold mt-4">Simple Web Crawler</h3>
             <p>
               This project is a simple web crawler built with C++. It
@@ -163,11 +164,11 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-4">Experience</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Experience Card 1 */}
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="shadow-md rounded-lg p-6 card">
             <h3 className="text-xl font-bold mb-2">Het Beginstation</h3>
             <p className="text-600">Intern</p>
-            <p className="text-600">February - July</p>
-            <p className="text-gray-600">
+            <p className="text-600 dark:text-gray-400">February - July</p>
+            <p className="text-gray-600 dark:text-gray-400 mt-2">
               Developed functionalities for a new bike management system to
               streamline the management and sales of bicycles. Utilized a
               combination of frontend and backend development skills using .NET
