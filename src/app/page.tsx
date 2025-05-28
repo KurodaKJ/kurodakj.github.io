@@ -7,6 +7,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faTwitter,
+  faGithub,
   faLinkedin,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
@@ -47,7 +48,7 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-4">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Project Card 1 */}
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="shadow-md rounded-lg p-6 card">
             <h3 className="text-xl font-bold mt-4">
               Website for advertising an Arduino project
             </h3>
@@ -74,7 +75,7 @@ export default function Home() {
           </div>
 
           {/* Project Card 2 */}
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="shadow-md rounded-lg p-6 card">
             <h3 className="text-xl font-bold mt-4">Time Registration System</h3>
             <p>
               This Time Registration System is a web application built with
@@ -89,7 +90,7 @@ export default function Home() {
           </div>
 
           {/* Project Card 3 */}
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="shadow-md rounded-lg p-6 card">
             <h3 className="text-xl font-bold mt-4">Menu Ordering System</h3>
             <p>
               This Android-based menu ordering system, built with Java, Kotlin,
@@ -107,7 +108,7 @@ export default function Home() {
           </div>
 
           {/* Project Card 4 */}
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="shadow-md rounded-lg p-6 card">
             <h3 className="text-xl font-bold mt-4">Simple Search Engine</h3>
             <p>
               This project is a simple search engine built with Laravel. It
@@ -124,7 +125,7 @@ export default function Home() {
           </div>
 
           {/* Project Card 5 */}
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="shadow-md rounded-lg p-6 card">
             <h3 className="text-xl font-bold mt-4">
               Inventory Management System
             </h3>
@@ -143,7 +144,7 @@ export default function Home() {
           </div>
 
           {/* Project Card 6 */}
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="shadow-md rounded-lg p-6 card">
             <h3 className="text-xl font-bold mt-4">Simple Web Crawler</h3>
             <p>
               This project is a simple web crawler built with C++. It
@@ -165,7 +166,7 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-4">Experience</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Experience Card 1 */}
-          <div className="bg-white shadow-md rounded-lg p-6">
+          <div className="shadow-md rounded-lg p-6 card">
             <h3 className="text-xl font-bold mb-2">Het Beginstation</h3>
             <p className="text-600">Intern</p>
             <p className="text-600 dark:text-gray-400">February - July</p>
@@ -195,6 +196,12 @@ export default function Home() {
               className="text-blue-300 hover:text-blue-500"
             >
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
+            </a>
+            <a
+              href="https://github.com/KurodaKJ"
+              className="text-blue-300 hover:text-blue-500"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
           </div>
         )}
