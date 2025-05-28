@@ -1,15 +1,13 @@
-"use client";
+"use client"; // This directive marks the file as a Client Component
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
-  faFacebook,
-  faTwitter,
   faGithub,
   faLinkedin,
-  faInstagram,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
@@ -31,13 +29,13 @@ export default function Home() {
       <section className="py-8">
         <h2 className="text-2xl font-bold mb-4">About Me</h2>
         <p>
-          Hi, I'm Jack Kaeorahan, a passionate Software Development student at
+          Hi, I&apos;m Jack Kaeorahan, a passionate Software Development student at
           Gilde ICT College in Roermond. Our curriculum is unique – we learn by
           doing, mirroring real-world client interactions. This hands-on
           approach gives me a significant advantage, preparing me for the
-          challenges and dynamics of the professional tech world. I've already
-          gained experience with a variety of programming languages and I'm
-          constantly seeking new knowledge to expand my skillset. I'm excited
+          challenges and dynamics of the professional tech world. I&apos;ve already
+          gained experience with a variety of programming languages and I&apos;m
+          constantly seeking new knowledge to expand my skillset. I&apos;m excited
           about the future of software development and eager to contribute to
           innovative projects.
         </p>
@@ -54,7 +52,7 @@ export default function Home() {
             </h3>
             <p>
               This website was created to showcase our Arduino project, an IoT
-              People Counter with Emergency Features. It's built using HTML, CSS
+              People Counter with Emergency Features. It&apos;s built using HTML, CSS
               and PHP for a simple and effective presentation. Learn more about
               the project via the Tinkercad link below.
             </p>
