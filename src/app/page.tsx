@@ -19,9 +19,18 @@ export default function Home() {
   return (
     <main className="container mx-auto px-4 py-8">
       {/* Hero Section */}
-      <section className="text-center py-12">
-        <h1 className="text-5xl font-bold mb-4">Jack Kaeorahan</h1>
-        <p className="text-lg">Software Development Student</p>
+      <section className="text-center py-12 flex flex-col items-center">
+        <Image
+          src="/images/profile.jpg"
+          alt="Jack Kaeorahan"
+          width={200}
+          height={200}
+          className="rounded-full mb-4"
+        />
+        <div className="flex flex-col items-center">
+          <h1 className="text-5xl font-bold mb-4">Jack Kaeorahan</h1>
+          <p className="text-lg">Software Development Student</p>
+        </div>
       </section>
 
       {/* About Section */}
