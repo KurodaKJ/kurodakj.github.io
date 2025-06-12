@@ -7,7 +7,6 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
-  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Home() {
